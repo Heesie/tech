@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    <link rel="stylesheet" href="styles/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h2>Aanmeldings Formulier</h2>
+      <form>
+        <label for="username">Username:</label>
+        <input type="text" required />
+
+        <label for="password">Password:</label>
+        <input type="password" required />
+
+        <label for="E-mail">E-mail:</label>
+        <input type="text" required />
+
+        <label for="Leeftijd">Leeftijd:</label>
+        <input type="number" min="1" max="100" required />
+
+        <label for="Geslacht">Geslacht:</label>
+        <ul>
+          <li>
+            <label>man</label>
+            <input type="radio" />
+          </li>
+          <li>
+            <label>vrouw</label>
+
+            <input type="radio" />
+          </li>
+          <li>
+            <label>other</label>
+
+            <input type="radio" />
+          </li>
+        </ul>
+
+        <label for="FavKleur">FavKleur:</label>
+        <input type="color" />
+
+        <button type="button">Login</button>
+      </form>
+    </div>
+  </body>
+</html>
