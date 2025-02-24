@@ -29,3 +29,4 @@ function movie(req, res, next) {
     }
     res.render('details.ejs', {data: movie})
 }
+

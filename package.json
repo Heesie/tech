@@ -5,7 +5,6 @@
   "main": "index.js",
   "scripts": {
     "dev": "nodemon server.js"
-
   },
   "repository": {
     "type": "git",
@@ -19,8 +18,10 @@
   "homepage": "https://github.com/Heesie/tech#readme",
   "dependencies": {
     "def": "^0.0.8",
+    "dotenv": "^16.4.7",
     "ejs": "^3.1.10",
     "express": "^4.21.2",
+    "mongodb": "^6.13.1",
     "nodemon": "^3.1.9"
   }
 }
