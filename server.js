@@ -30,3 +30,27 @@ function movie(req, res, next) {
     res.render('details.ejs', {data: movie})
 }
 
+require('dotenv').config()
+
+// MONGO DB APPLICATION CODE
+
+const { MongoClient, ObjectId } = require("mongodb");
+
+const uri = process.env.URI;
+
+const client = new MongoClient(uri);
+
+const db = client.db(process.env.DB_NAME);
+
+//MONGODB CONNECTION
+
+async function connectDB() {
+    try {
+await client.connect();
+console.log("Client connected to database");
+    } catch (error) {
+        console.log(error);
+    }    
+}
+
+connectDB();
