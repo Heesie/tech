@@ -1,5 +1,5 @@
-const express = require('express')
-const app = express()
+const express = require('express');
+const app = express();
 
 app 
 .use('/static', express.static('static'))
@@ -10,7 +10,7 @@ app
 .get ('/about', onabout)
 .get ('/loggedin', LoggedIn)
 
-.listen(8000)
+.listen(8000);
 
 
 function Login(req, res, next) {

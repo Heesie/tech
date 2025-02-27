@@ -1,6 +1,8 @@
 <!DOCTYPE html>
-
-<title><%= data.title %> - Log in Scherm</title>
+<head>
+    <title><%= data.title %> - Log in Scherm</title>
+    <link rel="stylesheet" href="static/styles/style.css" />
+  </head>
 
 <h1><%= data.title %></h1>
 <p><%= data.description %></p>
@@ -25,8 +27,10 @@
       <label for="FavKleur">FavKleur:</label>
       <input type="color" />
 
-      <button type="button">Submit</button>
+      <a href="/loggedin">
+        <button>SUBMIT</button>
+    </a>
+    
     </form>
   </div>
 
-<p><a href="/loggedin">SUBMIT</a></p>

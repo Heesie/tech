@@ -28,7 +28,7 @@ input {
 }
 
 button {
-    background-color: #4caf50;
+    background-color: #2323;
     color: #fff;
     padding: 10px;
     border: none;
@@ -36,8 +36,4 @@ button {
     cursor: pointer;
 }
 
-ul {
-    display: flex;
-    list-style: none;
-    gap: 3em;
-}
+
