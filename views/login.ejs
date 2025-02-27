@@ -5,4 +5,28 @@
 <h1><%= data.title %></h1>
 <p><%= data.description %></p>
 
+<div class="container">
+    <h2>Aanmeldings Formulier</h2>
+    <form>
+      <label for="username">Username:</label>
+      <input type="text" required />
+
+      <label for="password">Password:</label>
+      <input type="password" required />
+
+      <label for="E-mail">E-mail:</label>
+      <input type="text" required />
+
+      <label for="Leeftijd">Leeftijd:</label>
+      <input type="number" min="1" max="100" required />
+
+     
+
+      <label for="FavKleur">FavKleur:</label>
+      <input type="color" />
+
+      <button type="button">Submit</button>
+    </form>
+  </div>
+
 <p><a href="/loggedin">SUBMIT</a></p>

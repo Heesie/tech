@@ -15,14 +15,16 @@ app
 
 function Login(req, res, next) {
     let login = {
-        title: 'the shawshank redemtion',
-        description: 'Andy Dufresne is young and..'
+        title: 'loginscherm',
     }
     res.render('login.ejs', {data: login})
 }
 
 function LoggedIn(req, res) {
-    res.send('<h1>Hello World</h1>')
+    let loggedIn = {
+        title: 'logged in',
+    }
+    res.render('loggedin.ejs', {data: loggedIn})
 }
 
 function onabout(req, res) {
